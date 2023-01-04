@@ -1,6 +1,6 @@
 const startBtn = document.querySelector("button[data-start]");
 const stopBtn = document.querySelector("button[data-stop]");
-
+stopBtn.disabled = true;
 let timerId = null;
 
 startBtn.addEventListener("click", () => {
@@ -19,6 +19,8 @@ stopBtn.addEventListener("click", () => {
     startBtn.disabled = false;
     stopBtn.disabled = true;
 });
+
+
 // Напиши скрипт, який після натискання кнопки «Start», раз на секунду змінює колір фону <body> 
 // на випадкове значення, використовуючи інлайн стиль. Натисканням на кнопку «Stop» зміна кольору 
 // фону повинна зупинятися.
